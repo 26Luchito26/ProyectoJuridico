@@ -1,0 +1,225 @@
+/* Estilo General del Cuerpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de la Barra de Navegación */
+.navbar {
+    background-color: #1c2331;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #4b515d;
+    color: white;
+}
+
+/* Encabezado / Banner */
+header {
+    background-image: url('/static/Juridico/img/lawyer.jpg');
+    background-size: cover;
+    height: 60vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+header p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo de Secciones */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Sección "Sobre Nosotros" */
+.sobre-nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-nosotros img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.sobre-nosotros-texto {
+    width: 45%;
+}
+
+.sobre-nosotros-texto h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.sobre-nosotros-texto p {
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Sección de Servicios */
+.servicios {
+    background-color: #e9ecef;
+    padding: 60px 20px;
+}
+
+.servicios .servicio {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+.servicios .servicio h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #1c2331;
+}
+
+.servicios .servicio p {
+    color: #666;
+}
+
+/* Sección de Contacto */
+.contacto {
+    background-color: #fff;
+    padding: 60px;
+    text-align: center;
+}
+
+.contacto h2 {
+    margin-bottom: 30px;
+    color: #1c2331;
+}
+
+.contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contacto form input, 
+.contacto form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contacto form input:focus, 
+.contacto form textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.contacto form button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contacto form button:hover {
+    background-color: #004494;
+}
+
+
+.blog {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    text-align: center; 
+}
+
+.blog .entrada {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px; 
+}
+
+
+.post-image {
+    width: 600px; 
+    height: 600px;
+    object-fit: cover; 
+    border-radius: 6px; 
+    margin-bottom: 20px; 
+    display: block; 
+}
+
+
+.blog .entrada h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.blog .entrada p {
+    color: #555;
+}
+
+/* Pie de Página */
+footer {
+    background-color: #1c2331;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

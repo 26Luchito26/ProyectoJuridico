@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Estudios Jurídicos Marcelo Huanel</title>
+    <link href="{% static 'Juridico/css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Corresponde a la barra de navegación -->
+    <nav class="navbar">
+        <a href="{% url 'Inicio' %}">Inicio</a>
+        <a href="{% url 'Servicios' %}">Servicios</a>
+        <a href="{% url 'Blog' %}">Blog</a>
+        <a href="{% url 'Contacto' %}">Contacto</a>
+        <a href="{% url 'M_pantalla' %}">Mensaje Cualquiera en Pantalla</a>
+    </nav>
+
+    <!-- Encabezado de la Página del Blog -->
+    <header class="page-header">
+        <h1>Blog</h1>
+        <p>Últimas noticias y artículos sobre derecho y actualidad jurídica.</p>
+    </header>
+
+    <!-- Sección del Blog -->
+    <section class="blog-posts">
+        <article class="post">
+            <h2>Ley de Protección de Datos Personales en Chile: Novedades y Aplicaciones</h2>
+            <p class="date">Fecha de Publicación: 01/03/2024</p>
+            <p>La Ley 19.628 sobre Protección de la Vida Privada, conocida como Ley de Protección de Datos Personales, ha sido recientemente modificada para alinearse con los estándares internacionales. Este artículo explora los cambios recientes, su impacto en las empresas chilenas y las mejores prácticas para garantizar el cumplimiento.</p>
+            <a href="https://www.carey.cl/wp-content/uploads/filebase/Lex-Latin-Los-cambios-que-establece-la-nueva-ley-de-datos-personales-en-Chile.pdf" class="read-more">Leer más...</a>
+            <img src="{% static 'Juridico/img/datos.png' %}" alt="Ley de Protección de Datos Personales" class="post-image">
+        </article>
+
+        <article class="post">
+            <h2>Reformas Laborales en Chile: Lo que Necesitas Saber</h2>
+            <p class="date">Fecha de Publicación: 15/03/2024</p>
+            <p>En respuesta a las nuevas demandas del mercado laboral, Chile ha implementado reformas significativas en las leyes laborales. Este artículo analiza las principales reformas, su impacto en los derechos de los trabajadores y las implicancias para los empleadores.</p>
+            <a href="https://www.dt.gob.cl/portal/1628/w3-propertyvalue-165849.html" class="read-more">Leer más...</a>
+            <img src="{% static 'Juridico/img/laboral.png' %}" alt="Reformas Laborales en Chile" class="post-image">
+        </article>
+
+        <article class="post">
+            <h2>Aspectos Legales del Teletrabajo en Chile</h2>
+            <p class="date">Fecha de Publicación: 28/03/2024</p>
+            <p>Con el aumento del teletrabajo, es fundamental comprender las normativas legales que regulan esta modalidad en Chile. Este artículo proporciona una guía sobre los derechos y responsabilidades tanto de empleadores como de empleados en el contexto del teletrabajo.</p>
+            <a href="https://www.dt.gob.cl/portal/1628/w3-propertyvalue-179028.html" class="read-more">Leer más...</a>
+            <img src="{% static 'Juridico/img/teletrabajo.png' %}" alt="Aspectos Legales del Teletrabajo" class="post-image">
+        </article>
+
+        <article class="post">
+            <h2>Derechos del Consumidor en Chile: Guía Actualizada</h2>
+            <p class="date">Fecha de Publicación: 10/04/2024</p>
+            <p>Los derechos del consumidor en Chile han sido fortalecidos con nuevas leyes y regulaciones. Este artículo revisa los derechos actuales de los consumidores, las principales leyes aplicables y cómo pueden protegerse ante prácticas comerciales injustas.</p>
+            <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-8321.html" class="read-more">Leer más...</a>
+            <img src="{% static 'Juridico/img/consumidor.png' %}" alt="Derechos del Consumidor en Chile" class="post-image">
+        </article>
+
+        <article class="post">
+            <h2>Aspectos Jurídicos de las Inversiones Extranjeras en Chile</h2>
+            <p class="date">Fecha de Publicación: 20/04/2024</p>
+            <p>Chile sigue siendo un destino atractivo para inversores extranjeros. Este artículo explora los aspectos legales clave que deben considerar los inversionistas, incluyendo la protección de inversiones, regulaciones fiscales y requisitos legales para establecer negocios en el país.</p>
+            <a href="https://www.bcn.cl/leychile/navegar?idNorma=1078789" class="read-more">Leer más...</a>
+            <img src="{% static 'Juridico/img/inversiones.jpg' %}" alt="Aspectos Jurídicos de las Inversiones Extranjeras" class="post-image">
+        </article>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Estudios Jurídicos Marcelo Huanel. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

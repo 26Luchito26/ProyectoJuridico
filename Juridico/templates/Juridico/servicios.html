@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Estudios Jurídicos Marcelo Huanel</title>
+    <link href="{% static 'Juridico/css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <a href="{% url 'Inicio' %}">Inicio</a>
+        <a href="{% url 'Servicios' %}">Servicios</a>
+        <a href="{% url 'Blog' %}">Blog</a>
+        <a href="{% url 'Contacto' %}">Contacto</a>
+        <a href="{% url 'M_pantalla' %}">Mensaje Cualquiera en Pantalla</a>
+    </nav>
+
+    <!-- Encabezado de la Página de Servicios -->
+    <header class="page-header">
+        <h1>Servicios</h1>
+        <p>Conoce los servicios jurídicos que ofrecemos</p>
+    </header>
+
+    <!-- Sección de Servicios -->
+    <section class="servicios">
+        <div class="servicio">
+            <h2>Asesoría Legal Integral</h2>
+            <p>Brindamos asesoramiento completo en diferentes áreas del derecho, ayudándote a resolver cualquier inquietud legal que puedas tener.</p>
+        </div>
+        <div class="servicio">
+            <h2>Defensa Penal</h2>
+            <p>Defendemos tus derechos en casos penales, desde delitos menores hasta casos complejos, con un enfoque estratégico y profesional.</p>
+        </div>
+        <div class="servicio">
+            <h2>Contratos y Acuerdos</h2>
+            <p>Elaboramos y revisamos contratos y acuerdos para asegurar que tus intereses estén protegidos y tus documentos legales sean sólidos.</p>
+        </div>
+        <div class="servicio">
+            <h2>Derecho Laboral</h2>
+            <p>Protegemos tus derechos laborales y te asesoramos en cualquier disputa relacionada con el empleo, desde contratos hasta reclamaciones.</p>
+        </div>
+        <div class="servicio">
+            <h2>Asesoría en Herencias</h2>
+            <p>Te ayudamos a gestionar cuestiones relacionadas con herencias y sucesiones, asegurando que tus derechos y los de tus seres queridos estén protegidos.</p>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Estudios Jurídicos Marcelo Huanel. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Estudios Jurídicos Marcelo Huanel</title>
+    <link href="{% static 'Juridico/css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <a href="{% url 'Inicio' %}">Inicio</a>
+        <a href="{% url 'Servicios' %}">Servicios</a>
+        <a href="{% url 'Blog' %}">Blog</a>
+        <a href="{% url 'Contacto' %}">Contacto</a>
+        <a href="{% url 'M_pantalla' %}">Mensaje Cualquiera en Pantalla</a>
+    </nav>
+
+    <!-- Encabezado de la Página de Contacto -->
+    <header class="page-header">
+        <h1>Contacto</h1>
+        <p>Estamos aquí para ayudarte. A continuación, encontrarás nuestros datos de contacto.</p>
+    </header>
+
+    <!-- Sección de Información de Contacto -->
+    <section class="contacto-info">
+        <h2>Información de Contacto</h2>
+        <address>
+            <p><strong>Dirección:</strong> Calle 123, Punta Arenas, Chile</p>
+            <p><strong>Teléfono:</strong> +56 912345678</p>
+            <p><strong>Email:</strong> <a href="mailto: marceloh@estudiosjuridicosmh.cl">marceloh@estudiosjuridicosmh.cl</a></p>
+        </address>
+    </section>
+
+    <!-- Sección de Mapa de Google Maps-->
+    <section class="mapa">
+        <h2>Encuéntranos en el Mapa</h2>
+        
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d270.3560983786467!2d-70.9056855!3d-53.164736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdb2637a17bdf877%3A0x405d514883400acb!2sPdte.+Julio+A.Roca+960%2C+Punta+Arenas%2C+Magallanes+y+la+Ant%C3%A1rtica+Chilena!5e0!3m2!1ses!2sus!4v1634201241245!5m2!1ses!2sus"
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Estudios Jurídicos Marcelo Huanel. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

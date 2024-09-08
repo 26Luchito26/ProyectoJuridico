@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}  <!--Carga todos los archivos que son estaticos de la pagina, en este caso animaciones js, css, imágenes o videos-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudios Jurídicos Marcelo Huanel</title>
+
+    <!-- Cargar el archivo de estilos CSS -->
+    <link href="{% static 'Juridico/css/styles.css' %}" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <a href="{% url 'Inicio' %}">Inicio</a>
+        <a href="{% url 'Servicios' %}">Servicios</a>
+        <a href="{% url 'Blog' %}">Blog</a>
+        <a href="{% url 'Contacto' %}">Contacto</a>
+        <a href="{% url 'M_pantalla' %}">Mensaje Cualquiera en Pantalla</a>
+    </nav>
+
+    <!-- Encabezado / Banner de Inicio -->
+    <header>
+        <h1>Estudios Jurídicos Marcelo Huanel</h1>
+        <p>Especialistas en Derecho Civil, Penal y Laboral</p>
+    </header>
+
+    <!-- Sección de Bienvenida -->
+    <section class="bienvenida">
+        <h2>Bienvenidos a Nuestro Estudio Jurídico</h2>
+        <p>Nuestro equipo de abogados se compromete a ofrecer un servicio de calidad, personalizado y profesional en las diversas ramas del derecho. Contáctanos para conocer cómo podemos ayudarte.</p>
+    </section>
+
+    <!-- Sección de Servicios (Resumen) -->
+    <section class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicio">
+            <h3>Derecho Civil</h3>
+            <p>Asesoramiento integral en casos de derecho civil, contratos, herencias y más.</p>
+        </div>
+        <div class="servicio">
+            <h3>Derecho Penal</h3>
+            <p>Defensa en casos penales, desde delitos menores hasta asuntos más complejos.</p>
+        </div>
+        <div class="servicio">
+            <h3>Derecho Laboral</h3>
+            <p>Protección de los derechos laborales y representación en disputas laborales.</p>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2024 Estudios Jurídicos Marcelo Huanel. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
